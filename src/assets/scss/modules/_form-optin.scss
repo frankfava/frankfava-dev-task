@@ -1,0 +1,69 @@
+$text_color: #444;
+$btn_color: $text_color;
+
+.form-optin {
+	.optin-form {
+		.form-group {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding-top: 20px;
+			input {
+				width: 100%;
+				padding:5px 0;
+				color: $text_color;
+				border: none;
+				border-bottom: 1px solid $text_color;
+				outline: none;
+				background: transparent;
+				border-radius: 0;	
+				&:invalid {
+					border-color: red;
+					~ label {color: red;}
+				}
+			}
+			label {
+				line-height: 20px;
+				position: absolute;
+				top:0;
+				left:0;
+				font-size: 0.8em;
+				color: $text_color;
+				pointer-events: none;
+				transition: 0.5s;
+				margin: 0;
+			}
+		}
+		button {
+			position: relative;
+			display: inline-block;
+			color: $btn_color;
+			text-decoration: none;
+			text-transform: uppercase;
+			overflow: hidden;
+			transition: 0.5s;
+			background:none;
+			border:2px solid;
+			border-radius: 0;
+			padding: 0.5rem 1rem;
+			outline: 0;
+			&:hover {
+				background: $btn_color;
+				color: #FFF;
+			}
+			&:focus {
+				background:#222;
+				color: #FFF;
+			}
+		}
+	}
+	.hidden-fields {
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 0.26s ease;
+	}
+	.hidden-fields.show {
+		transform: scaleY(1);
+	}
+}

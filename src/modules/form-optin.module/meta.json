@@ -1,6 +1,6 @@
 {
-  "label": "Text Block",
-  "inline_help_text": "This is a content block with title, content and Cta or button with an option to choose where you want the content to be aligned",
+  "label": "Form Optin",
+  "inline_help_text": "",
   "module_id": "",
   "is_available_for_new_content": true,
   "global": false,
