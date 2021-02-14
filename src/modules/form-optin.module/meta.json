@@ -1,5 +1,6 @@
 {
   "label": "Form Optin",
+  "icon" : "../../assets/img/website.svg",
   "inline_help_text": "",
   "module_id": "",
   "is_available_for_new_content": true,
