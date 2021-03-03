@@ -1,0 +1,10 @@
+{
+  "name": "dev-task",
+  "version": "1.0.0",
+  "description": "Easy runner for uploading to hs",
+  "scripts": {
+    "watch": "hs watch src developer-coding-task --initial-upload",
+	"sass" : "sass src/assets/scss/main.scss src/assets/css/main.css --watch --style=compressed --no-source-map"
+  },
+  "author": "FF"
+}
